@@ -282,16 +282,15 @@ const clues = [
                         Reveal Hidden Video 🎥
                       </button>
                     </div>
-
                     {showVideo && (
-                        <motion.div
-                          initial={{ opacity: 0, y: 20 }}
-                          animate={{ opacity: 1, y: 0 }}
-                          className="rounded-3xl overflow-hidden shadow-2xl"
-                        >
+                      <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="rounded-3xl overflow-hidden shadow-2xl"
+                      >
                         <iframe
-                          className="w-full aspect-video"
-                          src="https://youtu.be/uCTkWqMp8Pg"
+                          className="w-full aspect-video rounded-3xl"
+                          src="https://www.youtube.com/embed/uCTkWqMp8Pg?autoplay=1&rel=0&modestbranding=1"
                           title="Pre Wedding Video"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                           allowFullScreen
