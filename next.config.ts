@@ -1,10 +1,12 @@
-/* import type { NextConfig } from "next"; */
+import type { NextConfig } from "next";
 
-const nextConfig = {
+const nextConfig: NextConfig = {
   output: "export",
   images: {
-    unoptimized: true
-  }
+    unoptimized: true,
+  },
+  basePath: "/LoveStoryTreasure",
+  assetPrefix: "/LoveStoryTreasure/",
 };
 
 export default nextConfig;
