@@ -4,48 +4,48 @@ import React, { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function TreasureHuntLoveStory() {
-  const clues = [
-    {
-      answer: "fattepur",
-      title: "Clue 1 — The Day Destiny Knocked",
-      hint: "A village in Jalgaon where two hesitant hearts agreed to just meet once.",
-      reveal:
-        "On 05/10/2025, in Fattepur, at her parents’ home, what began as an arranged setup quietly became the first page of our story.",
-      image: "/images/clue1.jpeg"
-    },
-    {
-      answer: "chance",
-      title: "Clue 2 — The Conversation That Changed Everything",
-      hint: "Sometimes the treasure is simply deciding to give something a chance.",
-      reveal:
-        "That first conversation felt easy, honest, and unexpectedly comforting. We both chose the same brave answer: let’s give this a chance.",
-      image: "/images/clue2.jpeg"
-    },
-    {
-      answer: "16112025",
-      title: "Clue 3 — The Promise Ring",
-      hint: "A date that turned possibility into a promise.",
-      reveal:
-        "On 16/11/2025, our engagement made the story official. Add your engagement photos here later as treasured memories.",
-      image: "/images/clue3.jpeg"
-    },
-    {
-      answer: "mumbai",
-      title: "Clue 4 — Our First Real Date",
-      hint: "The first chapter written by just the two of us.",
-      reveal:
-        "On 22/11/2025, we stepped into our first personal Mumbai date — just us discovering how beautiful our story could become.",
-      image: "/images/clue4.jpeg"
-    },
-    {
-      answer: "forever",
-      title: "Clue 5 — The Final Treasure",
-      hint: "From Fattepur to forever.",
-      reveal:
-        "What started in a quiet village home now leads to laughter, memories, Mumbai, and our forever wedding countdown ❤️",
-      image: "/images/clue5.jpeg"
-    }
-  ];
+const clues = [
+  {
+    answer: "fattepur",
+    title: "Clue 1 — The Day Destiny Knocked",
+    hint: "The village in Jalgaon where our arranged meeting unexpectedly began our story.",
+    reveal:
+      "On 05/10/2025, in Fattepur, at her parents’ home, what began as an arranged setup quietly became the first page of our story.",
+    image: "/images/clue1.jpeg"
+  },
+  {
+    answer: "22102025",
+    title: "Clue 2 — The First Endless Conversation",
+    hint: "The date our calls and texts truly began after deciding to give this a chance.",
+    reveal:
+      "After that first meeting, our real journey began on 22/10/2025 through late-night calls, texts, and conversations that slowly made us part of each other’s everyday life.",
+    image: "/images/clue2.jpeg"
+  },
+  {
+    answer: "16112025",
+    title: "Clue 3 — The Promise Ring",
+    hint: "The day possibility officially became a promise.",
+    reveal:
+      "On 16/11/2025, our engagement made the story official — a day that turned hesitation into certainty and memories into forever.",
+    image: "/images/clue3.jpeg"
+  },
+  {
+    answer: "22112025",
+    title: "Clue 4 — Our First Mumbai Date",
+    hint: "The date of our first personal date in the city we both call home.",
+    reveal:
+      "On 22/11/2025, we stepped into our first personal Mumbai date — just us discovering how beautiful our story could become.",
+    image: "/images/clue4.jpeg"
+  },
+  {
+    answer: "26042026",
+    title: "Clue 5 — The Final Treasure",
+    hint: "The wedding date where every clue in our story leads.",
+    reveal:
+      "What started in a quiet village home now leads to our biggest day — 26/04/2026, where our story becomes forever.",
+    image: "/images/clue5.jpeg"
+  }
+];
 
   const [step, setStep] = useState(0);
   const [showVideo, setShowVideo] = useState(false);
