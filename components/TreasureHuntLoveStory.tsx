@@ -46,6 +46,7 @@ const clues = [
     image: "/images/clue5.jpeg"
   }
 ];
+  const basePath = "/LoveStoryTreasure";
 
   const [step, setStep] = useState(0);
   const [showVideo, setShowVideo] = useState(false);
@@ -167,7 +168,7 @@ const clues = [
                 
                 <div className="relative aspect-[16/9]">
                   <img
-                    src={clue.image}
+                    src={`/LoveStoryTreasure${clue.image}`}
                     alt={clue.title}
                     className="w-full h-full object-cover"
                   />
